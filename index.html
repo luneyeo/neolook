@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Swiper JS -->
+  <link rel="stylesheet" href="./css/swiper.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <script type="text/javascript" src="./js/matchMedia.js"></script>
+  <script type="text/javascript" src="./js/matchMedia.addListener.js"></script>
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <script defer src="./js/index.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+
+
+  <title>네오룩</title>
+</head>
+
+<body>
+  <div id="wrap">
+    <!--페이지 시작-->
+    <header class="hWrap">
+      <!--상단헤더 시작-->
+      <div id="layer" class="menu_toggle">
+        <div class="toggle_container">
+          <ul>
+            <li>전시회</li>
+            <li>공모 및 행사</li>
+            <li>매거진</li>
+            <li>커뮤니티</li>
+            <li><a href="search.html" class="move">검색</a></li>
+            <li>회원</li>
+            <div class="toggle_memberList">
+              <li><a href="login.html"class="move">로그인</a></li>
+              <li>회원가입</li>
+              <li>최근 본 전시</li>
+              <li>마이페이지</li>
+            </div>
+            <li>네오룩 소개</li>
+          </ul>
+        </div>
+      </div>
+      <div id="toggle">
+        <div class="toggle__btn"></div>
+      </div>
+      <div class="hInner">
+        <div class="hTop">
+          <h1 class="logo"><a href="/index.html" title="네오룩 홈페이지가기" alt="로고"></a></h1>
+          <h2 class="blind">회원 및 검색 메뉴</h2>
+          <ul class="topMenu">
+            <li>
+              <a href="search.html" alt="검색"><i class="search"></i></a>
+            </li>
+            <li>
+              <a href="javascript:;"><i class="member"></i></a>
+              <ul class="subMenu">
+                <li><a href="login.html" alt="로그인">로그인</a></li>
+                <li><a href="javascript:;">회원가입</a></li>
+                <li><a href="javascript:;">마이페이지</a></li>
+                <li><a href="javascript:;">최근 본 전시</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="gnb">
+          <ul class="gnb_menu">
+            <li><a href="javascript:;" title="전시회">전시회</a></li>
+            <li><a href="javascript:;" title="공모 및 행사">공모 및 행사</a></li>
+            <li><a href="javascript:;" title="매거진">매거진</a></li>
+            <li><a href="javascript:;" title="커뮤니티">커뮤니티</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="mainWrap">
+      <!--메인 시작-->
+      <section class="slidebox">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/ing_list03.jpg" alt="배너1">
+            </div>
+            <div class="swiper-slide"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="exh_menu">
+        <!--전시회 목록 시작-->
+        <h2 class="exh_tit">전시회</h2>
+        <p class="exh_txt">현재 진행 중인 전시회입니다.</p>
+        <div>
+          <!-- 전시중 -->
+          <div class="exh_sub_tit">
+            <div class="ing_tit">진행 중인 전시회</div>
+            <ul class="ing_tab tab">
+              <li class="all is_on"><a href="#a" class="btn">전체</a></li>
+              <li class="person"><a href="#p" class="btn">개인전</a></li>
+              <li class="team"><a href="#t" class="btn">단체전</a></li>
+            </ul>
+          </div>
+          <div class="cont">
+            <!-- 전시중 리스트 -->
+            <ul id="a" class="exh_list ing_list">
+              <a href="javascript:;" class="ing_btn list_btn">
+                <li>
+                  <img src="img/ing_list01.jpg" alt="진행중01">
+                  <h3 class="ing_tit list_tit">3650 storage 인터뷰</h3>
+                  <p class="ing_txt list_txt">2022.12.17 ~ 2023.03.23</p>
+                </li>
+              </a>
+              <a href="javascript:;" class="ing_btn list_btn">
+                <li>
+                  <img src="img/ing_list02.jpg" alt="진행중02">
+                  <h3 class="ing_tit list_tit">FLANEUR MERRTS</h3>
+                  <p class="ing_txt list_txt">2022.12.21 ~ 2023.02.11</p>
+                </li>
+              </a>
+              <a href="javascript:;" class="ing_btn list_btn">
+                <li>
+                  <img src="img/ing_list03.jpg" alt="진행중03">
+                  <h3 class="ing_tit list_tit">Time to Wander</h3>
+                  <p class="ing_txt list_txt">2022.12.27 ~ 2023.01.26</p>
+                </li>
+              </a>
+            </ul>
+            <ul id="p" class="exh_list ing_list">
+              <a href="javascript:;" class="ing_btn list_btn">
+                <li>
+                  <img src="img/ing_list04.png" alt="진행중04">
+                  <h3 class="ing_tit list_tit">생각을 그리다</h3>
+                  <p class="ing_txt list_txt">2022.02.21 ~ 2022.04.06</p>
+                </li>
+              </a>
+              <a href="javascript:;" class="ing_btn list_btn">
+                <li>
+                  <img src="img/ing_list05.jpg" alt="진행중05">
+                  <h3 class="ing_tit list_tit">칸타빌레</h3>
+                  <p class="ing_txt list_txt">2022.03.13</p>
+                </li>
+              </a>
+              <a href="javascript:;" class="ing_btn list_btn">
+                <li>
+                  <img src="img/ing_list06.jpg" alt="진행중06">
+                  <h3 class="ing_tit list_tit">NEW CLASSIC 뉴 클래식</h3>
+                  <p class="ing_txt list_txt">2022.02.17 ~ 2022.06.23</p>
+                </li>
+              </a>
+            </ul>
+            <ul id="t" class="exh_list ing_list">
+              <a href="javascript:;" class="ing_btn list_btn">
+                <li>
+                  <img src="img/ing_list07.jpg" alt="진행중07">
+                  <h3 class="ing_tit list_tit">불야성 : THE WHITE WAY</h3>
+                  <p class="ing_txt list_txt">2022.12.17 ~ 2023.01.20</p>
+                </li>
+              </a>
+              <a href="javascript:;" class="ing_btn list_btn">
+                <li>
+                  <img src="img/ing_list08.jpg" alt="진행중08">
+                  <h3 class="ing_tit list_tit">The end of the Party</h3>
+                  <p class="ing_txt list_txt">2022.12.01 ~ 2023.01.31</p>
+                </li>
+              </a>
+              <a href="javascript:;" class="ing_btn list_btn">
+                <li>
+                  <img src="img/ing_list09.jpg" alt="진행중09">
+                  <h3 class="ing_tit list_tit">한옥관조</h3>
+                  <p class="ing_txt list_txt">2022.12.08 ~ 2023.03.19</p>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <!-- 예정 -->
+          <div class="exh_sub_tit">
+            <div class="pre_tit">전시 예정 전시회</div>
+            <ul class="pre_tab tab">
+              <li class="all is_on"><a href="#pre_a" class="btn">전체</a></li>
+              <li class="person"><a href="#pre_p" class="btn">개인전</a></li>
+              <li class="team"><a href="#pre_t" class="btn">단체전</a></li>
+            </ul>
+          </div>
+          <div class="cont">
+            <!-- 전시 예정 리스트 -->
+            <ul id="pre_a" class="exh_list pre_list">
+              <a href="javascript:;" class="pre_btn list_btn">
+                <li>
+                  <img src="img/pre_list01.jpg" alt="전시 예정 01">
+                  <h3 class="pre_tit list_tit">이경미 개인전시회</h3>
+                  <p class="pre_txt list_txt">2022.12.28 ~ 2023.01.31</p>
+                </li>
+              </a>
+              <a href="javascript:;" class="pre_btn list_btn">
+                <li>
+                  <img src="img/pre_list02.jpg" alt="전시 예정 02">
+                  <h3 class="pre_tit list_tit">E REUM 이름</h3>
+                  <p class="pre_txt list_txt">2022.12.02 ~ 2023.01.22</p>
+                </li>
+              </a>
+              <a href="javascript:;" class="pre_btn list_btn">
+                <li>
+                  <img src="img/pre_list03.jpg" alt="전시 예정 03">
+                  <h3 class="pre_tit list_tit">육각,수의 온도</h3>
+                  <p class="pre_txt list_txt">2022.02.17 ~ 2022.06.23</p>
+                </li>
+              </a>
+            </ul>
+            <ul id="pre_p" class="exh_list pre_list">
+              <a href="javascript:;" class="pre_btn list_btn">
+                <li>
+                  <img src="img/pre_list04.jpg" alt="전시 예정 04">
+                  <h3 class="pre_tit list_tit">bosudongcooler</h3>
+                  <p class="pre_txt list_txt">2022.11.17 ~ 2023.02.04</p>
+                </li>
+              </a>
+              <a href="javascript:;" class="pre_btn list_btn">
+                <li>
+                  <img src="img/pre_list05.jpeg" alt="전시 예정 05">
+                  <h3 class="pre_tit list_tit">스카이블루</h3>
+                  <p class="pre_txt list_txt">2022.12.20 ~ 2023.03.12</p>
+                </li>
+              </a>
+              <a href="javascript:;" class="pre_btn list_btn">
+                <li>
+                  <img src="img/pre_list06.jpg" alt="전시 예정 06">
+                  <h3 class="pre_tit list_tit">운둔과 안온</h3>
+                  <p class="pre_txt list_txt">2022.02.17 ~ 2023.01.23</p>
+                </li>
+              </a>
+            </ul>
+            <ul id="pre_t" class="exh_list pre_list">
+              <a href="javascript:;" class="pre_btn list_btn">
+                <li>
+                  <img src="img/pre_list07.jpg" alt="전시 예정 07">
+                  <h3 class="pre_tit list_tit">NEW CLASSIC 뉴 클래식</h3>
+                  <p class="pre_txt list_txt">2022.02.17 ~ 2022.06.23</p>
+                </li>
+              </a>
+              <a href="javascript:;" class="pre_btn list_btn">
+                <li>
+                  <img src="img/pre_list08.jpg" alt="전시 예정 08">
+                  <h3 class="pre_tit list_tit">트라이보울 야외 기획전시-HELLO</h3>
+                  <p class="pre_txt list_txt">2022.12.26 ~ 2023.01.24</p>
+                </li>
+              </a>
+              <a href="javascript:;" class="pre_btn list_btn">
+                <li>
+                  <img src="img/pre_list09.jpeg" alt="전시 예정 09">
+                  <h3 class="pre_tit list_tit">강강훈 개인전</h3>
+                  <p class="pre_txt list_txt">2023.01.02 ~ 2023.01.29</p>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="recommend_menu">
+        <!--추천전시회 리스트-->
+        <h2 class="exh_tit">이번 달 추천 전시회</h2>
+        <p class="exh_txt">#1월전시회 #체험전시 #실내전시</p>
+        <ul class="recommend_list">
+          <a href="javascript:;">
+            <li class="recommend_item">
+              <img src="img/recommend01.jpg" alt="추천01">
+              <div class="recommend_txtBox">
+                <!-- 추천 전시회 컨텐츠 텍스트 -->
+                <p class="recommend_txt">고영찬, 김수나 외 5명</p>
+                <h3 class="recommend_tit">시선의 번역</h3>
+                <p class="recommend_explan">국내 미디어아트 작가들이 대체불가토큰(NFT) 예술품들을 선보이는 전시
+                <p class="recommend_date">2022.02.14~2022.03.25</p>
+                </p>
+              </div>
+            </li>
+          </a>
+          <a href="javascript:;">
+            <li class="recommend_item">
+              <img src="img/recommend02.jpg" alt="추천02">
+              <div class="recommend_txtBox">
+                <!-- list title  -->
+                <p class="recommend_txt">케일리 개인전</p>
+                <h3 class="recommend_tit">안녕,감정 덩어리</h3>
+                <p class="recommend_explan">살면서 마주하게 되는 다양한 찰나를 담아내고 싶었어요. (케일리 작가) </p>
+                <p class="recommend_date">2022.02.04~2022.02.28</p>
+              </div>
+            </li>
+          </a>
+        </ul>
+      </section>
+      <section class="visit">
+        <!-- 방문하기 -->
+        <div class="visitBg"></div>
+        <div class="visitWrap">
+          <div class="visit_txtBox">
+            <h2 class="visit_tit">방문하기</h2>
+            <p class="visit_txt">다양한 작품들을 관람할 수 있는 미술관/전시회장입니다.</br>클릭시 홈페이지로 이동됩니다.</p>
+          </div>
+          <!-- 리스트 -->
+          <ul class="visit_item">
+            <a href="https://ggc.ggcf.kr/" target="_blank" class="visit_content">
+              <div class="bg"></div>
+              <img src="img/gallery01.jpeg" alt="오산시립미술관">
+              <div class="gallery">
+                <p class="gallery_tit">오산시립미술관</p>
+                <p class="gallery_more">바로가기
+                  <i class="arrow_right"></i>
+                </p>
+              </div>
+            </a>
+            <a href="http://onlinejmoa.or.kr/" target="_blank" class="visit_content">
+              <div class="bg"></div>
+              <img src="img/gallery02.jpg" alt="제주도립미술관">
+              <div class="gallery">
+                <p class="gallery_tit">제주도립미술관</p>
+                <p class="gallery_more">바로가기
+                  <i class="arrow_right"></i>
+                </p>
+              </div>
+            </a>
+            <a href="https://art.busan.go.kr" target="_blank" class="visit_content">
+              <div class="bg"></div>
+              <img src="img/gallery03.jpeg" alt="부산시립미술관">
+              <div class="gallery">
+                <p class="gallery_tit">부산시립미술관</p>
+                <p class="gallery_more">바로가기
+                  <i class="arrow_right"></i>
+                </p>
+              </div>
+            </a>
+            <a href="https://www.sangsangmadang.com/" target="_blank" class="visit_content">
+              <div class="bg"></div>
+              <img src="img/gallery04.jpeg" alt="상상마당">
+              <div class="gallery">
+                <p class="gallery_tit">상상마당</p>
+                <p class="gallery_more">바로가기
+                  <i class="arrow_right"></i>
+                </p>
+              </div>
+            </a>
+            <a href="https://www.museum.go.kr/site/main/home" target="_blank" class="visit_content">
+              <div class="bg"></div>
+              <img src="img/gallery05.jpg" alt="국립중앙박물관">
+              <div class="gallery">
+                <p class="gallery_tit">국립중앙박물관</p>
+                <p class="gallery_more">바로가기
+                  <i class="arrow_right"></i>
+                </p>
+              </div>
+            </a>
+            <a href="https://www.hmoka.org/main/index.do" target="_blank" class="visit_content">
+              <div class="bg"></div>
+              <img src="img/gallery06.jpeg" alt="성남 현대어린이책미술관">
+              <div class="gallery ">
+                <p class="gallery_tit six">성남 현대어린이책미술관</p>
+                <p class="gallery_more">바로가기
+                  <i class="arrow_right"></i>
+                </p>
+              </div>
+            </a>
+          </ul>
+        </div>
+      </section>
+      <section class="info">
+        <!--안내-->
+        <div class="notice">
+          <!--공지-->
+          <div class="notice_top">
+            <h2 class="notice_tit">공지</h2>
+            <a href="javascript:;" class="notice_more"></a>
+          </div>
+          <ul class="notice_first">
+            <a href="javascript:;">
+              <li>
+                <p class="notice_txt">필독_네오룩 보드 운영방침</p>
+                <p class="notice_date">2022-07-22</p>
+              </li>
+            </a>
+            <a href="javascript:;">
+              <li>
+                <p class="notice_txt">직원채용/알바인턴 구인광고 게제</p>
+                <p class="notice_date">2022-07-22</p>
+              </li>
+            </a>
+            <a href="javascript:;">
+              <li>
+                <p class="notice_txt">영어,한자이름 및 외국어 텍스트 협의</p>
+                <p class="notice_date">2022-06-01</p>
+              </li>
+            </a>
+            <a href="javascript:;">
+              <li>
+                <p class="notice_txt">청년작가 지원전 넥스트 코드 2022</p>
+                <p class="notice_date">2022-05-30</p>
+              </li>
+            </a>
+            <a href="javascript:;">
+              <li>
+                <p class="notice_txt">2022 어린이미술기획전 문화자원봉사</p>
+                <p class="notice_date">2022-03-23</p>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div class="employ">
+          <!--채용/공모-->
+          <div class="employ_top">
+            <h2 class="empoly_tit">채용/공모</h2>
+            <a href="javascript:;" class="employ_more"></a>
+          </div>
+          <ul class="employ_first">
+            <a href="javascript:;">
+              <li>
+                <p class="employ_txt">[공모]오픈갤러리 12차 작가 공모</p>
+                <p class="employ_date">2022-09-03</p>
+              </li>
+            </a>
+            <a href="javascript:;">
+              <li>
+                <p class="employ_txt">[채용]주콜라스트 큐레이터/마케팅</p>
+                <p class="employ_date">2022-07-22</p>
+              </li>
+            </a>
+            <a href="javascript:;">
+              <li>
+                <p class="employ_txt">[채용]Spectrum Gallery 파트타임</p>
+                <p class="employ_date">2022-07-22</p>
+              </li>
+            </a>
+            <a href="javascript:;">
+              <li>
+                <p class="employ_txt">[채용]2022년 신진작가 공모</p>
+                <p class="employ_date">2022-03-21</p>
+              </li>
+            </a>
+            <a href="javascript:;">
+              <li>
+                <p class="employ_txt">[채용]국제갤러리 전시장 파트타임</p>
+                <p class="employ_date">2022-03-21</p>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div class="ad">
+          <!--광고-->
+          <a href="javascript:;">
+            <div class="ad_slideBox">
+              <img src="img/ad_list01.png" alt="광고01">
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <!--footer-->
+      <div class="footer_inner">
+        <div><img src="img/logo.png" alt="로고"></div>
+        <div class="corp_area">
+          <ul class="corp_btn">
+            <li><a href="javascript:;">개인정보처리방침</a></li>
+            <li><a href="javascript:;">게재방법 안내</a></li>
+            <li><a href="javascript:;">사이트이용약관</a></li>
+            <li><a href="javascript:;">찾아오시는 길</a></li>
+            <li><a href="javascript:;">메일링 서비스</a></li>
+          </ul>
+          <p class="corp_info">
+            (우)03992 서울 마포구 월드컵북로 4길 24 5층(구 동교동 201-26번지 5층) 네오룩 이미지올로기연구소</br>
+            TEL 02)335-7922 FAX 02)335-7929</br>
+            neo@neolook.com
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- onclick="topMove()" -->
+    <div id="fixed_button">
+    </div>
+  </div>
+</body>
+
+
+</html>
