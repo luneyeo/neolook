@@ -1,0 +1,307 @@
+
+
+
+
+
+/* 로그인 */
+
+/* 브라우저 폭이 2000px 이하일때 보이는 로그인 화면 */
+@media screen and (max-width:2000px) {
+
+  .mainWrap {
+    width: 100%;
+  }
+
+  .login {
+    width: 330px;
+    margin: 100px auto;
+  }
+
+  .login .login_tit {
+    width: 100%;
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .login .login_tab {
+    margin-top: 40px;
+    width: 330px;
+    height: 40px;
+    border-bottom: 2px solid #000;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .login .login_tab .member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 14px;
+    background-color: #000;
+    color: white;
+  }
+
+  .login .login_tab .non_member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+  }
+
+
+  /* 회원, 비회원 탭 버튼 */
+
+  .tab {
+    border: none;
+    cursor: pointer;
+  }
+
+
+
+  .tab:hover {
+    background-color: rgb(230, 230, 230);
+  }
+
+
+
+  /* 회원, 비회원 로그인 폼 */
+  .login .tabcontent {
+    margin-top: 20px;
+  }
+
+  .tabcontent .id {
+    width: 316px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid #767676;
+    padding-left: 10px;
+  }
+
+  .tabcontent .password {
+    width: 316px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid #767676;
+    padding-left: 10px;
+  }
+
+  .tabcontent .submit {
+    width: 330px;
+    height: 50px;
+    margin-top: 10px;
+    border: none;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+  }
+
+
+  /* 로그인메뉴 */
+
+  .login .loginMenu {
+    width: 330px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 13px;
+    text-align: center;
+    position: relative;
+  }
+
+
+
+  .login .loginMenu .join {
+    flex-grow: 1;
+    padding: 10px 0;
+
+  }
+
+  .login .loginMenu .findId {
+    flex-grow: 1;
+    padding: 10px 0;
+  }
+
+  .login .loginMenu .findPassword {
+    flex-grow: 1;
+    padding: 10px 0;
+  }
+
+
+
+  /* 메뉴 사이선 */
+
+
+  .login .loginMenu .findId::after,
+  .login .loginMenu .findPassword::after {
+    width: 1px;
+    height: 14px;
+    background-color: #767676;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+  }
+
+}
+
+
+/* 브라우저 폭이 320px이하일때 보이는 로그인 화면*/
+@media screen and (max-width:320px) {
+  .login {
+    width: 260px;
+  }
+
+  .login .login_tab {
+    width: 260px;
+  }
+
+  /* 회원, 비회원 로그인 폼 */
+
+  .tabcontent .id {
+    width: 246px;
+    height: 40px;
+  }
+
+  .tabcontent .password {
+    width: 246px;
+    height: 40px;
+  }
+
+  .tabcontent .submit {
+    width: 260px;
+  }
+
+  /* 로그인메뉴 */
+
+  .login .loginMenu {
+    width: 260px;
+
+  }
+
+  .login .loginMenu .join {
+    flex-grow: 1;
+    padding: 5px 0;
+
+  }
+
+  .login .loginMenu .findId {
+    flex-grow: 1;
+    padding: 10px 0;
+  }
+
+  .login .loginMenu .findPassword {
+    flex-grow: 1;
+    padding: 10px 0;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 비회원 로그인 */
+
+.non_member_login {
+  display: none;
+}
+
+.non_member_login_active {
+  display: block;
+}
+
+
+
+
+
+/* sns 계정 */
+
+.sns_login {
+  margin-top: 34px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.sns {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+}
+
+.sns .naver {
+  width: 42px;
+  height: 42px;
+  border-radius: 100px;
+  background: #19ce60;
+  margin: 0 10px;
+  background-image: url(../img/naver-logo.svg);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: center;
+
+}
+
+.sns .kakao {
+  width: 42px;
+  height: 42px;
+  border-radius: 100px;
+  background: #fae100;
+  margin: 0 10px;
+  background-image: url(../img/kakao-logo.svg);
+  background-repeat: no-repeat;
+  background-size: 21px;
+  background-position: center;
+
+}
+
+.sns .facebook {
+  width: 42px;
+  height: 42px;
+  border-radius: 100px;
+  background: #3b5998;
+  margin: 0 10px;
+  background-image: url(../img/facebook-logo.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+
+}
+
+
+.sns .apple {
+  width: 42px;
+  height: 42px;
+  border-radius: 100px;
+  background: #000;
+  margin: 0 10px;
+  background-image: url(../img/apple-logo.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+}

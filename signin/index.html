@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/signin.css">
+  <title>로그인</title>
+
+  <script src="../js/jquery-3.6.1.min.js"></script>
+  <script defer src="../js/common.js"></script>
+  <script defer src="../js/signin.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <!--페이지 시작-->
+    <header class="hWrap">
+      <!--상단헤더 시작-->
+      <div id="layer" class="menu_toggle hide">
+        <div class="toggle_container">
+          <ul>
+            <li>전시회</li>
+            <li>공모 및 행사</li>
+            <li>매거진</li>
+            <li>커뮤니티</li>
+            <li><a href="../search.html">검색</a></li>
+            <li>회원</li>
+            <div class="toggle_memberList">
+              <li><a href="login.html">로그인</a></li>
+              <li>회원가입</li>
+              <li>최근 본 전시</li>
+              <li>마이페이지</li>
+            </div>
+            <li>네오룩 소개</li>
+          </ul>
+        </div>
+
+      </div>
+      <div id="toggle">
+        <div class="menu_toggleBtn"></div>
+      </div>
+      <div class="hInner">
+        <div class="hTop">
+          <h1 class="logo"><a href="../index.html" title="네오룩 홈페이지가기">네오룩</a></h1>
+          <h2 class="blind">회원 및 검색 메뉴</h2>
+          <ul class="topMenu">
+            <li>
+              <a href="../search.html"><i class="search"></i></a>
+            </li>
+            <li>
+              <a href="javascript:;"><i class="member"></i></a>
+              <ul class="subMenu">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="javascript:;">회원가입</a></li>
+                <li><a href="javascript:;">마이페이지</a></li>
+                <li><a href="javascript:;">최근 본 전시</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="gnb">
+          <ul class="gnb_menu">
+            <li><a href="javascript:;" title="전시회">전시회</a></li>
+            <li><a href="javascript:;" title="공모 및 행사">공모 및 행사</a></li>
+            <li><a href="javascript:;" title="매거진">매거진</a></li>
+            <li><a href="javascript:;" title="커뮤니티">커뮤니티</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="mainWrap">
+      <div class="login">
+        <p class="login_tit">로그인</p>
+        <!-- 로그인 탭 -->
+        <ul>
+          <li class="login_tab">
+            <button class="member tab" id="btn_member">회 원</button>
+            <button class="non_member tab" id="btn_non_member">비회원</button>
+          </li>
+        </ul>
+
+        <!-- 회원 -->
+        <form class="member_login tabcontent" id="member">
+          <input class="id" type="text" name="username" placeholder="아이디 또는 이메일">
+          <input class="password" type="password" name="password" placeholder="비밀번호">
+          <button class="submit" type="submit">로그인하기</button>
+        </form>
+
+        <!-- 비회원 -->
+        <form class="non_member_login tabcontent" id="nonMember">
+          <input class="id" type="text" name="username" placeholder="휴대폰 번호">
+          <input class="password" type="password" name="password" placeholder="비밀번호">
+          <button class="submit" type="submit">비회원 조회하기</button>
+        </form>
+
+        <ul>
+          <li class="loginMenu">
+            <a class="join" href="javascript:;">회원가입</a>
+            <a class="findId" href="javascript:;">아이디찾기</a>
+            <a class="findPassword" href="javascript:;">비밀번호찾기</a>
+          </li>
+        </ul>
+        <p class="sns_login">SNS 계정으로 로그인하기</p>
+        <ul>
+          <li class="sns">
+            <a class="naver" href="javascript:;"></a>
+            <a class="kakao" href="javascript:;"></a>
+            <a class="facebook" href="javascript:;"></a>
+            <a class="apple" href="javascript:;"></a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="footer">
+      <!--footer-->
+      <div class="footer_inner">
+        <img src="../img/logo.png" alt="">
+        <!--로고-->
+        <div class="corp_area">
+          <ul class="corp_btn">
+            <li><a href="javascript:;">개인정보처리방침</a></li>
+            <li><a href="javascript:;">게재방법 안내</a></li>
+            <li><a href="javascript:;">사이트이용약관</a></li>
+            <li><a href="javascript:;">찾아오시는 길</a></li>
+            <li><a href="javascript:;">메일링 서비스</a></li>
+          </ul>
+          <p class="corp_info">
+            (우)03992 서울 마포구 월드컵북로 4길 24 5층(구 동교동 201-26번지 5층) 네오룩 이미지올로기연구소</br>
+            TEL 02)335-7922 FAX 02)335-7929</br>
+            neo@neolook.com
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- onclick="topMove()" -->
+  <div id="fixed_button">
+  </div>
+
+</body>
+
+
+</html>
